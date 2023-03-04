@@ -108,7 +108,7 @@ body {
 
   .message a > .circle {
     right: -4px;
-    top:0px;
+    top: 0px;
   }
   .profile {
     justify-content: flex-end;
@@ -228,9 +228,11 @@ body {
   border-radius: 3px;
 }
 
+/* Modal */
+
 .modal-dialog {
-  margin-top: 160px;
-  margin-left: 270px;
+  margin-top: 170px;
+  margin-left: 300px;
   max-width: 617px;
   width: 617px;
   height: 444px;
@@ -307,4 +309,22 @@ body {
 .modal-footer .btn {
   width: 151px;
   height: 36px;
+}
+
+@media (max-width: 1450px) {
+  .modal-dialog {
+    margin-left: 142px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    margin: auto;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .modal-body .select {
+    gap: 24px;
+  }
 }
