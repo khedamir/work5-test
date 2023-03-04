@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <title>Work5</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="main-nav__logo">
+        <img src="./images/Logo.png" alt="" />
+      </div>
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href=""><img src="./images/svg/home.svg" alt="" /><span>Главная</span></a>
+        </li>
+        <li class="main-nav__item active">
+          <a href=""><img src="./images/svg/card.svg" alt="" /><span>Мои магазины</span></a>
+        </li>
+        <li class="main-nav__item">
+          <a href=""><img src="./images/svg/promo.svg" alt="" /><span>Промоматериалы</span></a>
+        </li>
+        <li class="main-nav__item">
+          <a href=""><img src="./images/svg/diagram.svg" alt="" /><span>Статистика</span></a>
+        </li>
+        <li class="main-nav__item">
+          <a href=""><img src="./images/svg/balans.svg" alt="" /><span>Баланс</span> </a>
+        </li>
+        <li class="main-nav__item">
+          <a href=""
+            ><img src="./images/svg/person.svg" alt="" /><span>Персональные данные</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href=""><img src="./images/svg/faq.svg" alt="" /><span>FAQ</span> </a>
+        </li>
+        <li class="main-nav__item">
+          <a href=""><img src="./images/svg/headphones.svg" alt="" /><span>Техподдержка</span> </a>
+        </li>
+        <li class="main-nav__item">
+          <a href=""><img src="./images/svg/exit.svg" alt="" /><span>Выход</span> </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <header class="main-header">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Мои магазины</li>
+          </ol>
+        </nav>
+        <div class="profile">
+          <span class="message">
+            <a href="">
+              <img src="./images/svg/message.svg" alt="" />
+              <span class="circle"><span></span></span>
+            </a>
+          </span>
+          <div class="avatar">
+            <img src="./images/фото.png" alt="" />
+            <p>Максим Добжанский</p>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <button
+          type="button"
+          class="btn btn-success plus"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          <img src="./images/svg/plus.svg" alt="" /> Создать свой магазин
+        </button>
+        <h2>Управление магазинами</h2>
+        <div class="magazine-table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">№</th>
+                <th scope="col">Название</th>
+                <th scope="col">Адрес</th>
+                <th scope="col">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12345</td>
+                <td>Дипломная работа</td>
+                <td>http://www.work5.ru/services</td>
+                <td class="table-buttons">
+                  <button type="button" class="btn btn-success">
+                    <img src="" alt="" />
+                    <img src="./images/svg/pencil.svg" alt="" /> Редактировать
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <img src="./images/svg/cansel.svg" alt="" />
+                    Редактировать
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>12345</td>
+                <td>Дипломная работа</td>
+                <td>http://www.work5.ru/services</td>
+                <td class="table-buttons">
+                  <button type="button" class="btn btn-success">
+                    <img src="" alt="" />
+                    <img src="./images/svg/pencil.svg" alt="" /> Редактировать
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <img src="./images/svg/cansel.svg" alt="" />
+                    Редактировать
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Создать магазин</h1>
+              <span>
+                <img
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  src="./images/svg/close-btn.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+            <div class="modal-body">
+              <div class="select">
+                <span>
+                  <p>Шаблон</p>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Стандартный</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </span>
+                <span>
+                  <p>Цветовая схема</p>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Классический</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </span>
+              </div>
+              <p>Домен</p>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Например: ivangrozniy"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <span class="input-group-text" id="basic-addon2">.work5.ru</span>
+              </div>
+              <div class="warning">
+                <img src="./images/svg/warning.svg" alt="" />
+                <p class="description">
+                  В названии домена разрешены латиница и “-”, запрещается использовать
+                  словосочетание Work 5. После создания магазина Вы сможете прикрутить свой домен
+                  (например ivangrozniy.ru). Подробнее по ссылке
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Отмена
+              </button>
+              <button type="button" class="btn btn-success">Создать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
